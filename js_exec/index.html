@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Test Page</title>
+	<script>
+		//排序,使输出：【1，11，15，19，2,20,22,25,29,3,33,40,5,9】
+		var arr = [1, 2, 3, 5, 9, 11, 15, 19, 20, 22, 25, 29, 33, 40];
+		fSort(arr);
+
+		function fSort(arr) {
+			return arr.sort(function (obj1, obj2) {
+				var objStr1 = String(obj1);
+				var objStr2 = String(obj2);
+				var s1Len = objStr1.length;
+				var s2Len = objStr2.length;
+				for (var i = 0; i <= Math.min(s1Len, s2Len) - 1; i++) {
+					var sub1 = objStr1.substring(i, i + 1);
+					var sub2 = objStr2.substring(i, i + 1);
+					if (sub1 > sub2) {
+						return 1;
+					}
+					if (sub1 < sub2) {
+						return -1;
+					}
+				}
+				return s1Len <= s2Len ? -1 : 1;
+			})
+		}
+		console.log(arr);
+	
+	</script>
+</head>
+<body>
+
+</body>
+</html>
