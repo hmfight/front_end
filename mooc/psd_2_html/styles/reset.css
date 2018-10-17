@@ -31,3 +31,7 @@ a:hover {
 img {
 	display: block;
 }
+
+.clearfix{
+	clear: both;
+}
