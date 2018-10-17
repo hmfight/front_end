@@ -19,3 +19,6 @@
 浮动和清除浮动
 
 [:after伪类+content内容生成经典应用举例](https://www.zhangxinxu.com/wordpress/2010/09/after%E4%BC%AA%E7%B1%BBcontent%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8%E4%B8%BE%E4%BE%8B/)
+
+### 步骤
+清除默认样式reset.css
